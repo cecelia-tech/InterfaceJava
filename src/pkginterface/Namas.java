@@ -1,15 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pkginterface;
 
-/**
- *
- * @author vita
- */
-public class Namas implements Elektra, Vanduo, Ventiliacija{
+
+public class Namas extends NeirengtasNamas {
     //SITAS METODAS PRIVALOMAS
     public void ijunk(){
         System.out.println("Ijungiam sviesa");
@@ -39,5 +31,15 @@ public class Namas implements Elektra, Vanduo, Ventiliacija{
     @Override
     public void stiprumas() {
         System.out.println("koks stiprumas?");
+    }
+
+    @Override
+    public void trumpasSujungimas() {
+        System.out.println("metodas is ElVand");
+    }
+
+    @Override
+    public void gesinkGaisra() {
+        System.out.println("Apsirasom abstrakcia klase");
     }
 }
